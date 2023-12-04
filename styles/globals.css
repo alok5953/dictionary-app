@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+   --foreground-dark-rgb: 235, 235, 245; /* Lighter text for dark background */
+  --background-dark-start-rgb: 36, 40, 47; /* Darker background start */
+  --background-dark-end-rgb: 28, 30, 33; /* Even darker background end */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-dark-rgb: 255, 255, 255;
+    --background-dark-start-rgb: 0, 0, 0;
+    --background-dark-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.dark {
+  color: rgb(var(--foreground-dark-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-dark-end-rgb))
+    )
+    rgb(var(--background-dark-start-rgb));
+}
