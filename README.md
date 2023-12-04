@@ -28,6 +28,6 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 This is a dictionary PWA so that the user can search meaning for different words
 
-I also save the user previous searched words to display it as Autocomplete next time. 
+It also saves the user previous searched words to display it as suggestions next time. 
 
 Suggest words based on user activity
